@@ -1,0 +1,16 @@
+<%- include('partical/header'); -%>
+<h1>Home</h1>
+  <p><%= house %></p>
+
+  <% word.forEach(function(word){%>
+    <h1 ><%=word.composed%></h1>
+  <p>
+    <%=word.composed1.substring(0,100)  +"...."%>
+    <a href="/post/<%=word.composed%>">READ MORE</a>
+  </p>
+
+  <%}); %>
+
+
+
+<%- include('partical/footer'); -%>
